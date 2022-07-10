@@ -19,11 +19,33 @@ The new MechaCar from AutosRUs is suffering from troubles in production. The goa
  - The model is 71% accurate, as noted by the R-Squared value of `0.7149`. It can accurately predict the MPG performance of the MechaCar, though there is room for improvement, likely by locating even more statistically significant variables.
 
 ### Summary Statistics on Suspension Coils
-![image](2022-07-10-10-38-15.png)
+![image](Resources/2022-07-10-10-38-15.png)
 
-![image](2022-07-10-10-40-46.png)
+![image](Resources/2022-07-10-10-40-46.png)
 
  - For all manufacturing lots in total, the variance does not exceed the 100 PSI limit, though it is on the high side at 62 PSI. 
  - This can be explained by the Lot summary, as manufacturing Lot 3 has an extremely high variance of 170 PSI, putting that lot well outside standards compared to Lots 1 and 2. Lot 3's Suspension Coils need to be rejected.
+
+### T-Tests on Suspension Coils
+
+All Lots against mean 1500 PSI
+ ![image](Resources/2022-07-10-10-55-03.png)
+
+ - The results of the t-Test indicate that the mean PSI for suspension coils across all lots is not statistically different from the population mean, and the p-value is not low enough for us to reject the null hypothesis.
+
+Lot 1 against mean 1500 PSI
+ ![image](Resources/2022-07-10-10-55-47.png)
+
+ - The results of the t-Test indicate that the mean PSI for suspension coils in Lot 1 is not statistically different from the population mean, and the p-value is not low enough for us to reject the null hypothesis.
+
+Lot 2 against mean 1500 PSI
+ ![image](Resources/2022-07-10-10-56-16.png)
+
+ - The results of the t-Test indicate that the mean PSI for suspension coils in Lot 2 is not statistically different from the population mean, and the p-value is not low enough for us to reject the null hypothesis.
+
+Lot 3 against mean 1500 PSI
+ ![image](Resources/2022-07-10-10-56-42.png)
+
+ - The results of the t-Test indicate that the mean PSI for suspension coils in Lot 3 is slightly statistically different than the population mean, and the p-value is low enough (0.04168) that we can reject the null hypothesis. Lot 3 should be discarded or re-evaluated.
 
  
