@@ -28,24 +28,43 @@ The new MechaCar from AutosRUs is suffering from troubles in production. The goa
 
 ### T-Tests on Suspension Coils
 
-All Lots against mean 1500 PSI
+**All Lots against mean 1500 PSI**
  ![image](Resources/2022-07-10-10-55-03.png)
 
  - The results of the t-Test indicate that the mean PSI for suspension coils across all lots is not statistically different from the population mean, and the p-value is not low enough for us to reject the null hypothesis.
 
-Lot 1 against mean 1500 PSI
+**Lot 1 against mean 1500 PSI**
  ![image](Resources/2022-07-10-10-55-47.png)
 
  - The results of the t-Test indicate that the mean PSI for suspension coils in Lot 1 is not statistically different from the population mean, and the p-value is not low enough for us to reject the null hypothesis.
 
-Lot 2 against mean 1500 PSI
+**Lot 2 against mean 1500 PSI**
  ![image](Resources/2022-07-10-10-56-16.png)
 
  - The results of the t-Test indicate that the mean PSI for suspension coils in Lot 2 is not statistically different from the population mean, and the p-value is not low enough for us to reject the null hypothesis.
 
-Lot 3 against mean 1500 PSI
+**Lot 3 against mean 1500 PSI**
  ![image](Resources/2022-07-10-10-56-42.png)
 
  - The results of the t-Test indicate that the mean PSI for suspension coils in Lot 3 is slightly statistically different than the population mean, and the p-value is low enough (0.04168) that we can reject the null hypothesis. Lot 3 should be discarded or re-evaluated.
 
- 
+## Study Design: MechaCar vs Competition
+
+When considering consumer needs for the MechaCar, it may be helpful to consider what it can do to beat out the competition not at the individual level, but at the *fleet* level. A large portion of our sales may come from ridesharing or otherwise large-volume companies that need many consistent and reliable vehicles. With a large number of vehicles, maintenance costs can add up, therefore we should test and gear our production toward reducing the costs of maintenance.
+
+### Metric to Test
+
+Our test will measure average maintenance costs (in $USD) per year for the MechaCar versus the competition's vehicles average maintenance per year.
+
+### Hypotheses
+
+ - H₀: MechaCar average annual maintenance costs are similar to competitor vehicles in the same vehicle class.
+ - Hₐ: MechaCar average annual maintenance costs are statistically above or below that of competitor vehicles.
+
+ ### Statistical Test Used
+
+ To compare these mean values, we would use two-sample t-Tests
+
+ ### Data required
+
+ We would need to gather, likely through survey of large fleet owners, the average maintenance cost per year of their current fleets versus the cost of a fleet of MechaCars.
