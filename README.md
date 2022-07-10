@@ -17,3 +17,13 @@ The new MechaCar from AutosRUs is suffering from troubles in production. The goa
  - With p-values of `2.6x10⁻¹²` and `5.21x10⁻⁸`, *Vehicle Length* and *Ground Clearance* are, respectively, the two most statistically significant factors in our dataset that affected the MPG of the MechaCar. The other variables do not seem to be statistically significant at all according to our model. However, the intercept is also statistically significant, indicating there may be other factors affecting our MPG that we did not measure.
  - The null hypothesis must be rejected, as the p-value for the linear model is `5.35x10⁻¹¹`. This is lower than an extreme level of significance, meaning at least some of our variables do have a significant impact on the MPG and cannot be attributed to random chance.
  - The model is 71% accurate, as noted by the R-Squared value of `0.7149`. It can accurately predict the MPG performance of the MechaCar, though there is room for improvement, likely by locating even more statistically significant variables.
+
+### Summary Statistics on Suspension Coils
+![image](2022-07-10-10-38-15.png)
+
+![image](2022-07-10-10-40-46.png)
+
+ - For all manufacturing lots in total, the variance does not exceed the 100 PSI limit, though it is on the high side at 62 PSI. 
+ - This can be explained by the Lot summary, as manufacturing Lot 3 has an extremely high variance of 170 PSI, putting that lot well outside standards compared to Lots 1 and 2. Lot 3's Suspension Coils need to be rejected.
+
+ 
